@@ -1,10 +1,18 @@
 import React from "react";
 import { Router, Link } from "@reach/router";
+import { GlobalStyle } from "./styles/GlobalStyle";
+import Home from "./components/layout/Home";
 
-import "./App.css";
+import Navbar from "./components/screen/Navbar";
 
-function App() {
-  return <div className="App"></div>;
-}
+import "./App.scss";
+
+const App = () => (
+  <>
+    <Navbar />
+    <Home />
+    <GlobalStyle />
+  </>
+);
 
 export default App;
